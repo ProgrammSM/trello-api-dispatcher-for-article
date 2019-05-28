@@ -37,9 +37,6 @@ HEREDOC;
         $trelloDispatcher = new TrelloDispatcher($trelloApiKey, $trelloToken, new TrelloApiService());
         $trelloDispatcher->createCard($trelloListId, $trelloCardName, $trelloCardDescription);
     } catch (Exception $e) {
-        print_r('1234');
-        print_r($e->getMessage());
-        die();
         // ... обработка ошибок
     }
 }
@@ -64,4 +61,4 @@ $form = [
     'delivery_address' => 'Свердловская область, г. Екатеринбург, ул. Черняховского, д.86, корп.8',
 ];
 
-sendToTrello($form);
+process_form($form);
