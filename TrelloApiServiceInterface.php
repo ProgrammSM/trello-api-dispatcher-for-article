@@ -6,7 +6,7 @@
 interface TrelloApiServiceInterface
 {
     /**
-     * Url к Api.
+     * Url к API.
      *
      * @return mixed
      */
@@ -20,7 +20,7 @@ interface TrelloApiServiceInterface
     public function isCurlOptHeaderEnable(): int;
 
     /**
-     * Результат запроса в виде строки, вместо вывода в браузер.
+     * Результат запроса в виде строки вместо вывода в браузер.
      *
      * @return int
      */

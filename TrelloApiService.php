@@ -8,7 +8,7 @@ require_once 'TrelloApiServiceInterface.php';
 class TrelloApiService implements TrelloApiServiceInterface
 {
     /**
-     * @var string Url api.
+     * @var string Url API.
      */
     private $_url;
 
@@ -18,7 +18,7 @@ class TrelloApiService implements TrelloApiServiceInterface
     private $_isCurlOptHeaderEnable = 1;
 
     /**
-     * @var bool Результат запроса в виде строки, вместо вывода в браузер.
+     * @var bool Результат запроса в виде строки вместо вывода в браузер.
      */
     private $_isReturnTransfer = true;
 

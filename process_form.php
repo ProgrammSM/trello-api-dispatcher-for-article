@@ -5,10 +5,10 @@ require_once 'TrelloApiService.php';
 
 function process_form($form)
 {
-    // Вызовет die() если будут какие-нибудь ошибки.
+    // Вызовет die(), если будут какие-нибудь ошибки.
     check_required_fields($form);
 
-    // Вызовет die() если будут проблемы при отправке.
+    // Вызовет die(), если будут проблемы при отправке.
     email_form_submission($form);
 
     // Создание карточки в Trello.
@@ -30,7 +30,7 @@ function sendToTrello($form)
 Телефон: {$form['user_phone']}
 Адрес доставки: {$form['delivery_address']}
 HEREDOC;
-        // Указываем token, ключ api и идентификатор списка.
+        // Указываем Token, ключ API и идентификатор списка.
         $trelloToken = '5f518a17a0181932830ce5a84c8ee3eee32830a5bfe71ec3b8e67ef2e70903ec';
         $trelloApiKey = 'f353503690b2fbbe5f801b5b03690a44';
         $trelloListId = '5c99d2bbfac3c99d2b288100';

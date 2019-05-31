@@ -6,7 +6,7 @@
 class TrelloDispatcher
 {
     /**
-     * @var string Url к api trello.com.
+     * @var string Url к API trello.com.
      */
     private const URL_API = 'https://api.trello.com/1/';
 
@@ -21,14 +21,14 @@ class TrelloDispatcher
     private $_token;
 
     /**
-     * @var TrelloApiServiceInterface Сервис для отправки отправки запросов к Trello
+     * @var TrelloApiServiceInterface Сервис для отправки запросов к Trello.
      */
     private $_service;
 
     /**
      * TrelloDispatcher constructor.
      *
-     * @param string                    $apiKey  Ключ к Api
+     * @param string                    $apiKey  Ключ к API
      * @param string                    $token   Token Trello
      * @param TrelloApiServiceInterface $service Реализация сервиса
      */
